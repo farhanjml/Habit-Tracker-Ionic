@@ -1,0 +1,215 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@600&family=Rubik:wght@500&display=swap');
+  </style>
+<ion-header class="ion-no-border">
+  <ion-toolbar color=warning class="ion-text-center">
+    <ion-title style="font-weight: 600;font-size: 25px;" color="dark" class="header">Discover</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+
+  <ion-slides pager="true" [options]="option">
+
+    <ion-slide>
+      <ion-card>
+        <img src="assets/whyhabit.jpeg">
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card>
+        <img src="assets/habitshape.jpeg">
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card>
+        <img src="assets/habitmoti.jpeg">
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card>
+        <img src="assets/habitlife.jpeg">
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card>
+        <img src="assets/habitgoal.jpeg">
+      </ion-card>
+    </ion-slide>
+    
+  </ion-slides>
+
+  <ion-card color="dark">
+  <h4 class="ion-text-center" ><strong>What habits should you track?</strong></h4>
+</ion-card>
+
+  <ion-grid>
+    <ion-row>
+      <ion-card color="warning">
+        <ion-card-header>        
+          <ion-card-title class="ion-text-center">Habit Guide</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+
+         Using the Two-Minute Rule, which suggests you scale your habits down until they take two minutes or less to perform. You can track whatever habits you want in your habit tracker, but I recommend starting with these super small habits to make sure that you are at least showing up in a small way each day. <br><br>Slides below shows a few example.
+        </ion-card-content>
+      </ion-card>
+      
+      
+      
+      <ion-slides pager="true" [options]="option">
+        <ion-slide>
+          <ion-card>
+
+            <img src="assets/common.png">
+          </ion-card>
+        </ion-slide>
+
+        <ion-slide>
+          <ion-card>
+            <img src="assets/weekly.png">
+          </ion-card>
+        </ion-slide>
+        
+      </ion-slides>
+
+        
+
+      <ion-col size="12">
+        <ion-card  class="title">
+          <ion-item color="danger" [routerLink]="['/avoidance']">
+            <ion-avatar slot="start">
+              <img src ="assets/avoid-ban.png" width="100%">
+              </ion-avatar>
+            <ion-label>
+            <h4 class="ion-text-center">Habits of avoidance</h4>
+          </ion-label>
+        </ion-item>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="12">
+        <ion-card  class="title">
+          <ion-item color="success" [routerLink]="['/healthy']">
+            <ion-avatar slot="start">
+              <img src ="assets/healthygreen.jpg" width="100%">
+              </ion-avatar>
+            <ion-label>
+            <h4 class="ion-text-center">Healthy habits</h4>
+          </ion-label>
+        </ion-item>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="12">
+        <ion-card  class="title">
+          <ion-item color="primary" [routerLink]="['/weather']">
+            <ion-avatar slot="start">
+              <img src ="assets/weathersymbol.jpg" width="100%">
+              </ion-avatar>
+            <ion-label>
+            <h4 class="ion-text-center">Weather based habits</h4>
+          </ion-label>
+        </ion-item>
+        </ion-card>
+      </ion-col>
+
+      
+    </ion-row>
+  </ion-grid>
+
+  <ion-card color="dark">
+    <h4 class="ion-text-center" ><strong>How long do i have to track my habits?</strong></h4>
+  </ion-card>
+
+  <ion-grid>
+    <ion-row>
+
+      <ion-card color="warning">
+        <ion-card-header>        
+          <ion-card-title class="ion-text-center">Habit Guide</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+
+        21 days, 30 days, 100 days. One popular answer right now is 66 days because there was one study that found that, on average, it took 66 days to build a habit. However, even within that study the range was quite wide depending on the difficulty of the habit. How long does it take? The honest answer is: forever. Because once you stop doing it, it is no longer a habit.
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="dark">
+        <h4 class="ion-text-center" ><strong>How to recover when habits break down?</strong></h4>
+      </ion-card>
+
+      <ion-card color="warning">
+        <ion-card-header>        
+          <ion-card-title class="ion-text-center">Habit Guide</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+
+        Every habit streak ends at some point. Perfection is not possible. Before long, an emergency will pop up—you get sick or you have to travel for work or your family needs a little more of your time. Whenever this happens to me, I try to remind myself of a simple rule:
+
+        Never miss twice. <br><br> Too often, we fall into an all-or-nothing cycle with our habits. The problem is not slipping up; the problem is thinking that if you can't do something perfectly, then you shouldn't do it at all.
+        </ion-card-content>
+      </ion-card>
+
+      <ion-slides pager="true" [options]="option">
+
+        <ion-slide>
+          <ion-card>
+            <img src="assets/inspiro/inspo7.jpeg">
+          </ion-card>
+        </ion-slide>
+
+        <ion-slide>
+          <ion-card>
+            <img src="assets/inspiro/inspo8.jpeg">
+          </ion-card>
+        </ion-slide>
+
+        <ion-slide>
+          <ion-card>
+            <img src="assets/inspiro/inspo9.jpeg">
+          </ion-card>
+        </ion-slide>
+
+        <ion-slide>
+          <ion-card>
+            <img src="assets/inspiro/inspo10.jpeg">
+          </ion-card>
+        </ion-slide>
+
+        <ion-slide>
+          <ion-card>
+            <img src="assets/inspiro/inspo11.jpeg">
+          </ion-card>
+        </ion-slide>
+
+        <ion-slide>
+          <ion-card>
+            <img src="assets/inspiro/inspo12.jpeg">
+          </ion-card>
+        </ion-slide>
+
+        <ion-slide>
+          <ion-card>
+            <img src="assets/inspiro/inspo13.jpeg">
+          </ion-card>
+        </ion-slide>
+        
+      </ion-slides>
+
+    </ion-row>
+
+   
+
+  </ion-grid>
+
+
+</ion-content>

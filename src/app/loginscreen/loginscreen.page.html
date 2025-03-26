@@ -1,0 +1,66 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <!--<ion-title>signup</ion-title>-->
+    <ion-buttons slot="start"> 
+      <ion-back-button defaulthref="login" text="">
+
+      </ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card class="ion-no-margin">
+      <ion-img src="assets/header1.png"></ion-img>
+      <ion-card-header>
+        <ion-card-title>
+          Login
+        </ion-card-title>
+  
+      
+  
+      </ion-card-header>
+      <ion-card-content>
+
+   
+        <div class="wrapform">
+         <ion-item>
+            <ion-input type="text" name="email" placeholder="Email" [(ngModel)]="user.email" required>
+           <ion-icon name="mail-outline"></ion-icon>
+           </ion-input>
+           </ion-item>
+           
+
+           <ion-item>
+
+             <ion-input type="password" name="password"  placeholder="**************" [(ngModel)]="user.password" required >
+             <ion-icon name="lock-closed"></ion-icon>
+             </ion-input>
+             </ion-item>
+
+            
+
+        </div>
+
+        <div class="password_forgot">
+          <ion-button fill="clear" class="ion-no-padding">Forgot Password?</ion-button>
+       </div>
+       <div class="sign-btn-wrap">
+          <ion-button  shape="round" type="submit"  fill="solid" class="sign-btn" (click)="login(user)" >Login</ion-button>
+         </div>
+
+         
+
+      </ion-card-content>
+
+
+    </ion-card>
+
+
+    <div class="ion-card-footer">
+     <span>Don’t have an account?</span><button class="ion-no-padding" (click)="gotoSignuppage()" >Sign Up</button>
+      </div>
+
+
+
+</ion-content>

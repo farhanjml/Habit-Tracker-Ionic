@@ -1,0 +1,51 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <!--<ion-title>signup</ion-title>-->
+    <ion-buttons slot="start"> 
+      <ion-back-button defaulthref="login" text="">
+
+      </ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="bg-color">
+
+  <ion-card class="ion-no-margin">
+
+    <ion-card-header>
+      <ion-card-title>
+        Sign up
+      </ion-card-title>
+      <ion-card-subtitle>
+        Create your account by filling up the form below
+      </ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+
+      <ion-item>
+        <ion-input name="email" type="text" placeholder=" Email" [(ngModel)]="user.email" required>
+          <ion-icon name="mail-outline"> </ion-icon>
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input name="password" type="password" placeholder=" ********" [(ngModel)]="user.password" required>
+          <ion-icon name="lock-closed"> </ion-icon>
+        </ion-input>
+      </ion-item>
+
+      <div class ="sign-btn-wrap">
+        <ion-button shape="round" fill="solid" class="sign-btn" (click)="register(user)">Sign Up</ion-button>
+        </div>
+        
+        
+      
+    </ion-card-content>
+
+
+
+  </ion-card>
+
+</ion-content>

@@ -1,0 +1,136 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color=warning class="ion-text-center">
+    <ion-buttons slot="start">
+      <ion-menu-button auto-hide="true" menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+   <ion-title style="font-weight: 600;font-size: 25px;">Home</ion-title> 
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-slides pager="true" [options]="option">
+    
+    <ion-slide>
+      <ion-card>
+        <img src="assets/renbow.png">
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card>
+        <img src="assets/habit.png">
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card>
+        <img src="assets/elevator.png">
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card>
+        <img src="assets/practice.png">
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card>
+        <img src="assets/change.png">
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card>
+        <img src="assets/26.png">
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card>
+        <img src="assets/23.png">
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card>
+        <img src="assets/19.png">
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card>
+        <img src="assets/17.png">
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card>
+        <img src="assets/2.png">
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card>
+        <img src="assets/9.png">
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card>
+        <img src="assets/11.png">
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card>
+        <img src="assets/12.png">
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card>
+        <img src="assets/13.png">
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card>
+        <img src="assets/15.png">
+      </ion-card>
+    </ion-slide>
+    
+    <ion-slide>
+      <ion-card>
+        <img src="assets/control.jpeg">
+      </ion-card>
+    </ion-slide>
+
+  </ion-slides>
+
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      
+  
+        <ion-tab-button tab="about" [routerLink]="['/discover']">
+          <ion-icon name="search-outline"></ion-icon>
+          <ion-label>Discover</ion-label>
+        </ion-tab-button>
+  
+        <ion-tab-button tab="about" [routerLink]="['/inspiration']">
+          <ion-icon name="bulb-outline"></ion-icon>
+          <ion-label>Inspiration</ion-label>
+        </ion-tab-button>
+  
+        <ion-tab-button tab="about" [routerLink]="['/home']">
+          <ion-icon name="calendar-outline"></ion-icon>
+          <ion-label>Track</ion-label>
+        </ion-tab-button>
+        
+    </ion-tab-bar>
+  </ion-tabs>
+
+
+</ion-content>
+
